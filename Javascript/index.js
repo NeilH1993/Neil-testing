@@ -1,5 +1,8 @@
 function guessingGame(guessNumber) {
-while (guessNumber !== randomNumber) {
+  let randomNumber = Math.floor(Math.random() * 3) + 1;
+  let attempts = 0;
+  
+  while (guessNumber !== randomNumber) {
     if (guessNumber < randomNumber) {
       console.log("Too High");
      return;
